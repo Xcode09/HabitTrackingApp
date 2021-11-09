@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackVC" customModule="HabitTrackingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="logBtn" destination="J6f-kQ-oyZ" id="czW-dm-NjX"/>
+                <outlet property="statsBtn" destination="YWQ-mx-pUO" id="ZO5-ru-Dk6"/>
+                <outlet property="trackNailBitingBtn" destination="QSY-Ql-zfA" id="UzH-N1-AQc"/>
+                <outlet property="trackUsedToolsBtn" destination="GSX-ES-4lU" id="fpP-Dl-RNl"/>
+                <outlet property="view" destination="9vz-Ke-v8M" id="xry-We-olo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9vz-Ke-v8M">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pOT-gk-7b5">
+                    <rect key="frame" x="20" y="60" width="374" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="vkQ-pk-baq">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-Ft-ssb">
+                                    <rect key="frame" x="0.0" y="0.0" width="174.5" height="200"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSY-Ql-zfA">
+                                            <rect key="frame" x="0.0" y="0.0" width="174.5" height="168.5"/>
+                                            <color key="backgroundColor" name="BtnColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <state key="normal" title="4">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="trackNailBitting:" destination="-1" eventType="touchUpInside" id="gpx-ep-D8c"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nail Biting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-az-isK">
+                                            <rect key="frame" x="0.0" y="178.5" width="174.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SpR-2M-2Od">
+                                    <rect key="frame" x="199.5" y="0.0" width="174.5" height="200"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-ES-4lU">
+                                            <rect key="frame" x="0.0" y="0.0" width="174.5" height="168.5"/>
+                                            <color key="backgroundColor" name="S2"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <state key="normal" title="4/6">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="trackUsedTools:" destination="-1" eventType="touchUpInside" id="ooJ-cp-8ED"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Used Tool" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-TI-Pvx">
+                                            <rect key="frame" x="0.0" y="178.5" width="174.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="Tnq-Ip-IQu"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FGl-KS-bUV">
+                            <rect key="frame" x="0.0" y="223" width="374" height="213"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZgT-ot-zVO">
+                                    <rect key="frame" x="0.0" y="0.0" width="174.5" height="213"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-vm-e69">
+                                            <rect key="frame" x="0.0" y="0.0" width="174.5" height="181.5"/>
+                                            <color key="backgroundColor" name="S3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-nL-U9q">
+                                            <rect key="frame" x="0.0" y="191.5" width="174.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aVk-Ie-kuR">
+                                    <rect key="frame" x="199.5" y="0.0" width="174.5" height="213"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxG-44-HE2">
+                                            <rect key="frame" x="0.0" y="0.0" width="174.5" height="181.5"/>
+                                            <color key="backgroundColor" name="S4"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Log" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSu-DV-4nv">
+                                            <rect key="frame" x="0.0" y="191.5" width="174.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="gie-Aw-SuN"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="FGl-KS-bUV"/>
+                        </mask>
+                    </variation>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press square to track" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq7-cp-NYu">
+                    <rect key="frame" x="20" y="44" width="374" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="qIl-bV-qZ5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6Dw-Gd-rXi">
+                    <rect key="frame" x="20" y="808" width="374" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6f-kQ-oyZ">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="46"/>
+                            <color key="backgroundColor" name="BtnColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="zg0-Mq-vfW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Log">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWQ-mx-pUO">
+                            <rect key="frame" x="274" y="0.0" width="100" height="46"/>
+                            <color key="backgroundColor" name="BtnColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Dxm-pf-7rH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Stats">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="gotStats" destination="-1" eventType="touchUpInside" id="brt-r0-af8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="eJh-VF-M3Y"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wZn-Rf-eoX"/>
+            <color key="backgroundColor" name="BG"/>
+            <constraints>
+                <constraint firstItem="pOT-gk-7b5" firstAttribute="leading" secondItem="wZn-Rf-eoX" secondAttribute="leading" constant="20" id="3pI-hM-vyB"/>
+                <constraint firstItem="wZn-Rf-eoX" firstAttribute="trailing" secondItem="Lq7-cp-NYu" secondAttribute="trailing" constant="20" id="A9S-he-KJv"/>
+                <constraint firstAttribute="bottomMargin" secondItem="6Dw-Gd-rXi" secondAttribute="bottom" constant="8" id="ANs-Rf-Tr7"/>
+                <constraint firstItem="6Dw-Gd-rXi" firstAttribute="leading" secondItem="9vz-Ke-v8M" secondAttribute="leading" constant="20" symbolic="YES" id="Rdh-Z6-mP7"/>
+                <constraint firstAttribute="trailing" secondItem="6Dw-Gd-rXi" secondAttribute="trailing" constant="20" symbolic="YES" id="Umc-GI-Gvi"/>
+                <constraint firstItem="Lq7-cp-NYu" firstAttribute="leading" secondItem="wZn-Rf-eoX" secondAttribute="leading" constant="20" id="VQc-PZ-Def"/>
+                <constraint firstItem="pOT-gk-7b5" firstAttribute="top" secondItem="wZn-Rf-eoX" secondAttribute="top" constant="16" id="bKN-56-YTm"/>
+                <constraint firstItem="Lq7-cp-NYu" firstAttribute="top" secondItem="wZn-Rf-eoX" secondAttribute="top" id="le1-t0-14M"/>
+                <constraint firstItem="wZn-Rf-eoX" firstAttribute="trailing" secondItem="pOT-gk-7b5" secondAttribute="trailing" constant="20" id="qWZ-1g-2v4"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Lq7-cp-NYu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="69.565217391304358" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BG">
+            <color red="1" green="0.99199998378753662" blue="0.97000002861022949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BtnColor">
+            <color red="0.98199999332427979" green="0.5220000147819519" blue="0.39899998903274536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="S2">
+            <color red="0.99900001287460327" green="0.93999999761581421" blue="0.64099997282028198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="S3">
+            <color red="0.77499997615814209" green="0.88099998235702515" blue="0.46500000357627869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="S4">
+            <color red="0.99599999189376831" green="0.90299999713897705" blue="0.84899997711181641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

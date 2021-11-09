@@ -3,19 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130ABC5F272F10410075870B /* SetPlansAndGoalsSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130ABC5D272F10410075870B /* SetPlansAndGoalsSecondVC.swift */; };
+		130ABC60272F10410075870B /* SetPlansAndGoalsSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130ABC5E272F10410075870B /* SetPlansAndGoalsSecondVC.xib */; };
+		1319B8802732D1D400E4ED5B /* TrackCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319B87F2732D1D400E4ED5B /* TrackCollectionVC.swift */; };
+		1319B8842732D27100E4ED5B /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319B8822732D27100E4ED5B /* TrackCell.swift */; };
+		1319B8852732D27100E4ED5B /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1319B8832732D27100E4ED5B /* TrackCell.xib */; };
+		1319B88A2732E49F00E4ED5B /* TrackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1319B8882732E49E00E4ED5B /* TrackVC.xib */; };
+		1319B88B2732E49F00E4ED5B /* TrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319B8892732E49F00E4ED5B /* TrackVC.swift */; };
+		1319B88F2732F9E200E4ED5B /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319B88E2732F9E100E4ED5B /* Local.swift */; };
 		133F2B9B272D6CE5002B7D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F2B9A272D6CE5002B7D5E /* AppDelegate.swift */; };
 		133F2B9D272D6CE5002B7D5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F2B9C272D6CE5002B7D5E /* SceneDelegate.swift */; };
 		133F2B9F272D6CE5002B7D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F2B9E272D6CE5002B7D5E /* ViewController.swift */; };
 		133F2BA2272D6CE5002B7D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133F2BA0272D6CE5002B7D5E /* Main.storyboard */; };
 		133F2BA4272D6CE7002B7D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133F2BA3272D6CE7002B7D5E /* Assets.xcassets */; };
 		133F2BA7272D6CE7002B7D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133F2BA5272D6CE7002B7D5E /* LaunchScreen.storyboard */; };
+		133F2BB4272D6DE9002B7D5E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F2BB2272D6DE9002B7D5E /* LoginVC.swift */; };
+		133F2BB5272D6DE9002B7D5E /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133F2BB3272D6DE9002B7D5E /* LoginVC.xib */; };
+		135AA0262737F04300E049CD /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135AA0252737F04300E049CD /* ActivityIndicatorView.swift */; };
+		135AA0302737F56400E049CD /* PerviousEnteries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135AA02F2737F56400E049CD /* PerviousEnteries.swift */; };
+		135AA03E273821D600E049CD /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135AA03C273821D600E049CD /* LogCell.swift */; };
+		135AA03F273821D600E049CD /* LogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135AA03D273821D600E049CD /* LogCell.xib */; };
+		135E1672273186CE0081491F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 135E1671273186CE0081491F /* Charts */; };
+		135E16772731875A0081491F /* StatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E16752731875A0081491F /* StatsVC.swift */; };
+		135E16782731875A0081491F /* StatsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135E16762731875A0081491F /* StatsVC.xib */; };
+		135E167C2731B0560081491F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E167B2731B0560081491F /* Constants.swift */; };
+		135E24FF273145DF0082456F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 135E24FE273145DF0082456F /* Alamofire */; };
+		135E25092731474A0082456F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E25062731474A0082456F /* Networking.swift */; };
+		135E250E273149370082456F /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E250D273149370082456F /* GeneralModel.swift */; };
+		135E251527314ECA0082456F /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 135E251427314ECA0082456F /* FacebookCore */; };
+		135E251727314ECA0082456F /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 135E251627314ECA0082456F /* FacebookLogin */; };
+		13A4C725272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C723272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift */; };
+		13A4C726272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C724272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib */; };
+		13A4C72A272F052300FAF953 /* TagListView in Frameworks */ = {isa = PBXBuildFile; productRef = 13A4C729272F052300FAF953 /* TagListView */; };
+		13DD55A5273053F60081286F /* ChipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD55A3273053F60081286F /* ChipCell.swift */; };
+		13DD55A6273053F60081286F /* ChipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DD55A4273053F60081286F /* ChipCell.xib */; };
+		13DD55AB27305E4A0081286F /* HabitLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD55A927305E4A0081286F /* HabitLogVC.swift */; };
+		13DD55AC27305E4A0081286F /* HabitLogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DD55AA27305E4A0081286F /* HabitLogVC.xib */; };
+		13DD55B1273064900081286F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD55AF273064900081286F /* SignUpVC.swift */; };
+		13DD55B2273064900081286F /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DD55B0273064900081286F /* SignUpVC.xib */; };
+		13FCD10027300E12003A1B92 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCD0FE27300E12003A1B92 /* HomeVC.swift */; };
+		13FCD10127300E12003A1B92 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13FCD0FF27300E12003A1B92 /* HomeVC.xib */; };
+		C12603C36086979FC3045193 /* Pods_HabitTrackingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254AE7AD196FE2C98F812F37 /* Pods_HabitTrackingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1136FA6D41A70040BC6D3FA0 /* Pods-HabitTrackingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTrackingApp.debug.xcconfig"; path = "Target Support Files/Pods-HabitTrackingApp/Pods-HabitTrackingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		130ABC5D272F10410075870B /* SetPlansAndGoalsSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPlansAndGoalsSecondVC.swift; sourceTree = "<group>"; };
+		130ABC5E272F10410075870B /* SetPlansAndGoalsSecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPlansAndGoalsSecondVC.xib; sourceTree = "<group>"; };
+		1319B87F2732D1D400E4ED5B /* TrackCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionVC.swift; sourceTree = "<group>"; };
+		1319B8822732D27100E4ED5B /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		1319B8832732D27100E4ED5B /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		1319B8882732E49E00E4ED5B /* TrackVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackVC.xib; sourceTree = "<group>"; };
+		1319B8892732E49F00E4ED5B /* TrackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
+		1319B88E2732F9E100E4ED5B /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
 		133F2B97272D6CE5002B7D5E /* HabitTrackingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTrackingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133F2B9A272D6CE5002B7D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		133F2B9C272D6CE5002B7D5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +68,29 @@
 		133F2BA3272D6CE7002B7D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		133F2BA6272D6CE7002B7D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		133F2BA8272D6CE7002B7D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133F2BB2272D6DE9002B7D5E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		133F2BB3272D6DE9002B7D5E /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		135AA0252737F04300E049CD /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		135AA02F2737F56400E049CD /* PerviousEnteries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerviousEnteries.swift; sourceTree = "<group>"; };
+		135AA03C273821D600E049CD /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
+		135AA03D273821D600E049CD /* LogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogCell.xib; sourceTree = "<group>"; };
+		135E16752731875A0081491F /* StatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsVC.swift; sourceTree = "<group>"; };
+		135E16762731875A0081491F /* StatsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsVC.xib; sourceTree = "<group>"; };
+		135E167B2731B0560081491F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		135E25062731474A0082456F /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		135E250D273149370082456F /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		13A4C723272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPlansAndGoalsFirstVC.swift; sourceTree = "<group>"; };
+		13A4C724272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPlansAndGoalsFirstVC.xib; sourceTree = "<group>"; };
+		13DD55A3273053F60081286F /* ChipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCell.swift; sourceTree = "<group>"; };
+		13DD55A4273053F60081286F /* ChipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChipCell.xib; sourceTree = "<group>"; };
+		13DD55A927305E4A0081286F /* HabitLogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitLogVC.swift; sourceTree = "<group>"; };
+		13DD55AA27305E4A0081286F /* HabitLogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitLogVC.xib; sourceTree = "<group>"; };
+		13DD55AF273064900081286F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		13DD55B0273064900081286F /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		13FCD0FE27300E12003A1B92 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		13FCD0FF27300E12003A1B92 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		254AE7AD196FE2C98F812F37 /* Pods_HabitTrackingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitTrackingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44EA68DB7B78DAF206F1390 /* Pods-HabitTrackingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTrackingApp.release.xcconfig"; path = "Target Support Files/Pods-HabitTrackingApp/Pods-HabitTrackingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +98,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135E251727314ECA0082456F /* FacebookLogin in Frameworks */,
+				135E1672273186CE0081491F /* Charts in Frameworks */,
+				13A4C72A272F052300FAF953 /* TagListView in Frameworks */,
+				135E24FF273145DF0082456F /* Alamofire in Frameworks */,
+				135E251527314ECA0082456F /* FacebookCore in Frameworks */,
+				C12603C36086979FC3045193 /* Pods_HabitTrackingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1319B88D2732F9E100E4ED5B /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				1319B88E2732F9E100E4ED5B /* Local.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		133F2B8E272D6CE5002B7D5E = {
 			isa = PBXGroup;
 			children = (
 				133F2B99272D6CE5002B7D5E /* HabitTrackingApp */,
 				133F2B98272D6CE5002B7D5E /* Products */,
+				B5AAB41657202722563BFEAE /* Pods */,
+				A17AD2935153BF31F48E2BD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +139,17 @@
 		133F2B99272D6CE5002B7D5E /* HabitTrackingApp */ = {
 			isa = PBXGroup;
 			children = (
+				135AA0242737F04300E049CD /* ActivityIndicatorController */,
+				1319B88D2732F9E100E4ED5B /* UserDefaults */,
+				135E167A2731B0560081491F /* Constants */,
+				135E16742731873F0081491F /* Stats */,
+				135E250C273149170082456F /* Models */,
+				135E25052731474A0082456F /* Networking */,
+				13DD55A827305D0A0081286F /* HabitLogVC */,
+				13DD559D273039800081286F /* TrackVC */,
+				13FCD0FD27300D9F003A1B92 /* HomeGroup */,
+				13A4C722272F043700FAF953 /* SetPlansAndGoals */,
+				133F2BAF272D6DB1002B7D5E /* AuthenticationVCs */,
 				133F2B9A272D6CE5002B7D5E /* AppDelegate.swift */,
 				133F2B9C272D6CE5002B7D5E /* SceneDelegate.swift */,
 				133F2B9E272D6CE5002B7D5E /* ViewController.swift */,
@@ -63,8 +157,139 @@
 				133F2BA3272D6CE7002B7D5E /* Assets.xcassets */,
 				133F2BA5272D6CE7002B7D5E /* LaunchScreen.storyboard */,
 				133F2BA8272D6CE7002B7D5E /* Info.plist */,
+				13DD55A3273053F60081286F /* ChipCell.swift */,
+				13DD55A4273053F60081286F /* ChipCell.xib */,
 			);
 			path = HabitTrackingApp;
+			sourceTree = "<group>";
+		};
+		133F2BAF272D6DB1002B7D5E /* AuthenticationVCs */ = {
+			isa = PBXGroup;
+			children = (
+				133F2BB1272D6DC9002B7D5E /* SignUpVC */,
+				133F2BB0272D6DC0002B7D5E /* LoginVC */,
+			);
+			path = AuthenticationVCs;
+			sourceTree = "<group>";
+		};
+		133F2BB0272D6DC0002B7D5E /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				133F2BB2272D6DE9002B7D5E /* LoginVC.swift */,
+				133F2BB3272D6DE9002B7D5E /* LoginVC.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		133F2BB1272D6DC9002B7D5E /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				13DD55AF273064900081286F /* SignUpVC.swift */,
+				13DD55B0273064900081286F /* SignUpVC.xib */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		135AA0242737F04300E049CD /* ActivityIndicatorController */ = {
+			isa = PBXGroup;
+			children = (
+				135AA0252737F04300E049CD /* ActivityIndicatorView.swift */,
+			);
+			path = ActivityIndicatorController;
+			sourceTree = "<group>";
+		};
+		135E16742731873F0081491F /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				135E16752731875A0081491F /* StatsVC.swift */,
+				135E16762731875A0081491F /* StatsVC.xib */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		135E167A2731B0560081491F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				135E167B2731B0560081491F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		135E25052731474A0082456F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				135E25062731474A0082456F /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		135E250C273149170082456F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				135E250D273149370082456F /* GeneralModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13A4C722272F043700FAF953 /* SetPlansAndGoals */ = {
+			isa = PBXGroup;
+			children = (
+				13A4C723272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift */,
+				13A4C724272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib */,
+				130ABC5D272F10410075870B /* SetPlansAndGoalsSecondVC.swift */,
+				130ABC5E272F10410075870B /* SetPlansAndGoalsSecondVC.xib */,
+			);
+			path = SetPlansAndGoals;
+			sourceTree = "<group>";
+		};
+		13DD559D273039800081286F /* TrackVC */ = {
+			isa = PBXGroup;
+			children = (
+				1319B8892732E49F00E4ED5B /* TrackVC.swift */,
+				1319B8882732E49E00E4ED5B /* TrackVC.xib */,
+				1319B87F2732D1D400E4ED5B /* TrackCollectionVC.swift */,
+				1319B8822732D27100E4ED5B /* TrackCell.swift */,
+				1319B8832732D27100E4ED5B /* TrackCell.xib */,
+			);
+			path = TrackVC;
+			sourceTree = "<group>";
+		};
+		13DD55A827305D0A0081286F /* HabitLogVC */ = {
+			isa = PBXGroup;
+			children = (
+				13DD55A927305E4A0081286F /* HabitLogVC.swift */,
+				13DD55AA27305E4A0081286F /* HabitLogVC.xib */,
+				135AA02F2737F56400E049CD /* PerviousEnteries.swift */,
+				135AA03C273821D600E049CD /* LogCell.swift */,
+				135AA03D273821D600E049CD /* LogCell.xib */,
+			);
+			path = HabitLogVC;
+			sourceTree = "<group>";
+		};
+		13FCD0FD27300D9F003A1B92 /* HomeGroup */ = {
+			isa = PBXGroup;
+			children = (
+				13FCD0FE27300E12003A1B92 /* HomeVC.swift */,
+				13FCD0FF27300E12003A1B92 /* HomeVC.xib */,
+			);
+			path = HomeGroup;
+			sourceTree = "<group>";
+		};
+		A17AD2935153BF31F48E2BD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				254AE7AD196FE2C98F812F37 /* Pods_HabitTrackingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AAB41657202722563BFEAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1136FA6D41A70040BC6D3FA0 /* Pods-HabitTrackingApp.debug.xcconfig */,
+				E44EA68DB7B78DAF206F1390 /* Pods-HabitTrackingApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +299,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 133F2BAB272D6CE7002B7D5E /* Build configuration list for PBXNativeTarget "HabitTrackingApp" */;
 			buildPhases = (
+				8F2ACE52715C8A71A130AB93 /* [CP] Check Pods Manifest.lock */,
 				133F2B93272D6CE5002B7D5E /* Sources */,
 				133F2B94272D6CE5002B7D5E /* Frameworks */,
 				133F2B95272D6CE5002B7D5E /* Resources */,
+				4C5F7A2CD14073971067E53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HabitTrackingApp;
+			packageProductDependencies = (
+				13A4C729272F052300FAF953 /* TagListView */,
+				135E24FE273145DF0082456F /* Alamofire */,
+				135E251427314ECA0082456F /* FacebookCore */,
+				135E251627314ECA0082456F /* FacebookLogin */,
+				135E1671273186CE0081491F /* Charts */,
+			);
 			productName = HabitTrackingApp;
 			productReference = 133F2B97272D6CE5002B7D5E /* HabitTrackingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +344,12 @@
 				Base,
 			);
 			mainGroup = 133F2B8E272D6CE5002B7D5E;
+			packageReferences = (
+				13A4C728272F052300FAF953 /* XCRemoteSwiftPackageReference "TagListView" */,
+				135E24FD273145DF0082456F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				135E1670273186CE0081491F /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 133F2B98272D6CE5002B7D5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,13 +364,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1319B88A2732E49F00E4ED5B /* TrackVC.xib in Resources */,
 				133F2BA7272D6CE7002B7D5E /* LaunchScreen.storyboard in Resources */,
+				13DD55B2273064900081286F /* SignUpVC.xib in Resources */,
 				133F2BA4272D6CE7002B7D5E /* Assets.xcassets in Resources */,
+				135E16782731875A0081491F /* StatsVC.xib in Resources */,
+				13DD55A6273053F60081286F /* ChipCell.xib in Resources */,
+				133F2BB5272D6DE9002B7D5E /* LoginVC.xib in Resources */,
+				13A4C726272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib in Resources */,
+				1319B8852732D27100E4ED5B /* TrackCell.xib in Resources */,
+				13DD55AC27305E4A0081286F /* HabitLogVC.xib in Resources */,
+				135AA03F273821D600E049CD /* LogCell.xib in Resources */,
 				133F2BA2272D6CE5002B7D5E /* Main.storyboard in Resources */,
+				130ABC60272F10410075870B /* SetPlansAndGoalsSecondVC.xib in Resources */,
+				13FCD10127300E12003A1B92 /* HomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5F7A2CD14073971067E53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitTrackingApp/Pods-HabitTrackingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitTrackingApp/Pods-HabitTrackingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitTrackingApp/Pods-HabitTrackingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F2ACE52715C8A71A130AB93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitTrackingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		133F2B93272D6CE5002B7D5E /* Sources */ = {
@@ -138,8 +431,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				133F2B9F272D6CE5002B7D5E /* ViewController.swift in Sources */,
+				13FCD10027300E12003A1B92 /* HomeVC.swift in Sources */,
+				13A4C725272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift in Sources */,
+				135E25092731474A0082456F /* Networking.swift in Sources */,
+				135E250E273149370082456F /* GeneralModel.swift in Sources */,
+				1319B88F2732F9E200E4ED5B /* Local.swift in Sources */,
+				13DD55B1273064900081286F /* SignUpVC.swift in Sources */,
+				13DD55A5273053F60081286F /* ChipCell.swift in Sources */,
+				135E167C2731B0560081491F /* Constants.swift in Sources */,
+				1319B8802732D1D400E4ED5B /* TrackCollectionVC.swift in Sources */,
 				133F2B9B272D6CE5002B7D5E /* AppDelegate.swift in Sources */,
+				135AA03E273821D600E049CD /* LogCell.swift in Sources */,
+				133F2BB4272D6DE9002B7D5E /* LoginVC.swift in Sources */,
+				135AA0262737F04300E049CD /* ActivityIndicatorView.swift in Sources */,
+				1319B8842732D27100E4ED5B /* TrackCell.swift in Sources */,
+				13DD55AB27305E4A0081286F /* HabitLogVC.swift in Sources */,
 				133F2B9D272D6CE5002B7D5E /* SceneDelegate.swift in Sources */,
+				1319B88B2732E49F00E4ED5B /* TrackVC.swift in Sources */,
+				135AA0302737F56400E049CD /* PerviousEnteries.swift in Sources */,
+				135E16772731875A0081491F /* StatsVC.swift in Sources */,
+				130ABC5F272F10410075870B /* SetPlansAndGoalsSecondVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,39 +594,43 @@
 		};
 		133F2BAC272D6CE7002B7D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1136FA6D41A70040BC6D3FA0 /* Pods-HabitTrackingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H874Q37WU8;
 				INFOPLIST_FILE = HabitTrackingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Muhammad-Ali.HabitTrackingApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.habitios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		133F2BAD272D6CE7002B7D5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44EA68DB7B78DAF206F1390 /* Pods-HabitTrackingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H874Q37WU8;
 				INFOPLIST_FILE = HabitTrackingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Muhammad-Ali.HabitTrackingApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.habitios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +656,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		135E1670273186CE0081491F /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		135E24FD273145DF0082456F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.0;
+			};
+		};
+		135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+		13A4C728272F052300FAF953 /* XCRemoteSwiftPackageReference "TagListView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ElaWorkshop/TagListView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		135E1671273186CE0081491F /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135E1670273186CE0081491F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		135E24FE273145DF0082456F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135E24FD273145DF0082456F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		135E251427314ECA0082456F /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		135E251627314ECA0082456F /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		13A4C729272F052300FAF953 /* TagListView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13A4C728272F052300FAF953 /* XCRemoteSwiftPackageReference "TagListView" */;
+			productName = TagListView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 133F2B8F272D6CE5002B7D5E /* Project object */;
 }
