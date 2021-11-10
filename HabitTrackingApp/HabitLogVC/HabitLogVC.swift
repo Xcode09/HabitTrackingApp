@@ -17,7 +17,7 @@ class HabitLogVC: UIViewController {
     private var feeling = "UnKnown"
     private var biteOr = "UnKnown"
     private var usedTool = "UnKnown"
-    @IBOutlet weak private var otherThingsView:UITextView!
+    @IBOutlet weak private var otherThingsView:UITextField!
     @IBOutlet weak private var chipCV1:UICollectionView!
     @IBOutlet weak private var urge:UISlider!
     @IBOutlet weak private var ques2View:UICollectionView!{
@@ -58,12 +58,23 @@ class HabitLogVC: UIViewController {
         ques3View.register(
             MDCChipCollectionViewCell.self,
             forCellWithReuseIdentifier: "identifier")
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        button.setTitle("P", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(goToPervious), for: .touchUpInside)
+        button.backgroundColor = UIColor.labelColor
+        button.layer.cornerRadius = button.frame.width/2
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Pervious", style: .plain, target: self, action: #selector(goToPervious))
+        let perVi = UIBarButtonItem(title: "Pervious", style: .plain, target: self, action: #selector(goToPervious))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Habit Log"
+    }
     @objc private func goToPervious(){
         let vc = PerviousEnteries()
+        self.navigationItem.title = ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -73,7 +84,7 @@ class HabitLogVC: UIViewController {
     }
     @IBAction private func submitBtn(_ sender:UIButton)
     {
-        let para : [String:Any] = ["id":"1",
+        let para : [String:Any] = ["id":"\(golbalUser.id ?? 0)",
         "tool_used":usedTool,
         "other_things":otherThingsView.hasText == true ? otherThingsView.text ?? "" : "",
         "urge":"\(urgeValues)",
@@ -90,7 +101,7 @@ class HabitLogVC: UIViewController {
                 ActivityController.init().dismissIndicator()
                 switch result{
                 case .success(let user):
-                    print("Successlffff",user)
+                    break
                 case .failure(let er):
                     print(er)
                 }

@@ -36,7 +36,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="174.5" height="168.5"/>
                                             <color key="backgroundColor" name="BtnColor"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                            <state key="normal" title="4">
+                                            <state key="normal" title="0">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -63,7 +63,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="174.5" height="168.5"/>
                                             <color key="backgroundColor" name="S2"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                            <state key="normal" title="4/6">
+                                            <state key="normal" title="0/0">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>

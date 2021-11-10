@@ -92,7 +92,8 @@ class PerviousEnteries: UIViewController,UITableViewDelegate,UITableViewDataSour
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 80))
         
         let label = UILabel()
-        label.text = enteries[section].date
+        label.numberOfLines = 0
+        label.text = "\(enteries[section].date.formatIntoDate())\nHello"
         let button = UIButton()
         button.setImage(UIImage.init(systemName: "chevron.down"), for: .normal)
         button.tintColor = .white

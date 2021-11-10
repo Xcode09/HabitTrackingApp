@@ -105,14 +105,59 @@ class LoginVC: BaseController {
             else
             {
                 print("Print entire fetched result: \(result)")
+                if let dic = result as? [String:Any]{
+                    let login = ["email":dic["email"] as! String,"password":dic["id"] as! String]
+                    let signup = ["name":dic["name"] as! String,"email":dic["email"] as! String,"password":dic["id"] as! String]
+                    self.authenticationWithFb(logindic: login, signInDic: signup)
+                }
                 
-//                let id : String = result.va
-//                print("User ID is: \(id)")
-//
-//                if let userName = result.valueForKey("name") as? String
-//                {
-//                    print(userName)
-//                }
+            }
+        }
+    }
+    
+    private func authenticationWithFb(logindic:[String:Any],signInDic:[String:Any]){
+        ActivityController.init().showIndicator()
+        Networking.shareInstance.callNetwork(uri: ApiEndPoints.login,method: .post,parameters:logindic) { (result:Result<UserModel>) in
+            DispatchQueue.main.async {
+                [weak self] in
+                guard let self = self else {return}
+                ActivityController.init().dismissIndicator()
+                switch result{
+                case .success(let user):
+                    guard let use = user.result?.first else {return}
+                    UserState.saveUserLogin(user:use)
+                    NotificationCenter.default.post(name: .update, object: self)
+                case .failure(let er):
+                    self.signUpCall(loginindic: logindic, dic: signInDic)
+                }
+            }
+        }
+    }
+    private func signUpCall(loginindic:[String:Any],dic:[String:Any]){
+        Networking.shareInstance.callNetwork(uri: ApiEndPoints.signup, method: .post, parameters: dic) { (result:Result<SuccessModel>) in
+            DispatchQueue.main.async {
+                [weak self] in
+                guard let self = self else {return}
+                ActivityController.init().dismissIndicator()
+                switch result{
+                case .success:
+                    Networking.shareInstance.callNetwork(uri: ApiEndPoints.login,method: .post,parameters:loginindic) { (result:Result<UserModel>) in
+                        DispatchQueue.main.async {
+                            [weak self] in
+                            guard let self = self else {return}
+                            switch result{
+                            case .success(let user):
+                                guard let use = user.result?.first else {return}
+                                UserState.saveUserLogin(user:use)
+                                NotificationCenter.default.post(name: .update, object: self)
+                            case .failure(let er):
+                                self.showAlert(title: "Error", message: er.localizedDescription, action: nil)
+                            }
+                        }
+                    }
+                case .failure(let er):
+                    self.showAlert(title: "Error", message: er.localizedDescription, action: nil)
+                }
             }
         }
     }

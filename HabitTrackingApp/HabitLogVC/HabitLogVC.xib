@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HabitLogVC" customModule="HabitTrackingApp" customModuleProvider="target">
             <connections>
                 <outlet property="chipCV1" destination="meE-Eo-XkL" id="4a0-qs-doJ"/>
-                <outlet property="otherThingsView" destination="Ui5-pc-apg" id="gnK-gD-mvx"/>
+                <outlet property="otherThingsView" destination="zCI-X1-oxx" id="cHT-Lj-KhG"/>
                 <outlet property="ques2View" destination="ovo-6h-blJ" id="oQ1-s9-frD"/>
                 <outlet property="ques3View" destination="cUK-UB-maK" id="Pd1-MV-AXQ"/>
                 <outlet property="urge" destination="c6o-RR-3mh" id="upY-i0-MCm"/>
@@ -32,15 +32,15 @@
                             <rect key="frame" x="0.0" y="0.0" width="335" height="76"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oL6-ZB-Qpp">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="26"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OjD-PJ-acK">
-                                    <rect key="frame" x="0.0" y="30" width="335" height="46"/>
+                                    <rect key="frame" x="0.0" y="36" width="335" height="40"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="46" id="tOk-xB-3bm"/>
+                                        <constraint firstAttribute="height" constant="40" id="tOk-xB-3bm"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -152,14 +152,11 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ui5-pc-apg">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" e.g" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCI-X1-oxx">
                                     <rect key="frame" x="0.0" y="36.5" width="335" height="43.5"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                    <color key="textColor" systemColor="labelColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="4hq-gL-slF"/>
@@ -168,7 +165,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m82-jz-WCI">
-                    <rect key="frame" x="127.5" y="589" width="120" height="46"/>
+                    <rect key="frame" x="127.5" y="575" width="120" height="46"/>
                     <color key="backgroundColor" name="S2"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="L1N-Hw-drW"/>
@@ -191,7 +188,7 @@
             <viewLayoutGuide key="safeArea" id="rqX-eO-sIs"/>
             <color key="backgroundColor" name="BG"/>
             <constraints>
-                <constraint firstItem="m82-jz-WCI" firstAttribute="top" secondItem="xa0-Ib-zC2" secondAttribute="bottom" constant="30" id="Wj1-H3-ozV"/>
+                <constraint firstItem="m82-jz-WCI" firstAttribute="top" secondItem="xa0-Ib-zC2" secondAttribute="bottom" constant="16" id="Wj1-H3-ozV"/>
                 <constraint firstItem="xa0-Ib-zC2" firstAttribute="top" secondItem="rqX-eO-sIs" secondAttribute="top" constant="8" id="Xgt-kE-fs4"/>
                 <constraint firstItem="xa0-Ib-zC2" firstAttribute="leading" secondItem="rqX-eO-sIs" secondAttribute="leading" constant="20" id="bDN-dS-tWe"/>
                 <constraint firstItem="xa0-Ib-zC2" firstAttribute="centerX" secondItem="m82-jz-WCI" secondAttribute="centerX" id="drt-Ga-zpq"/>
@@ -210,9 +207,6 @@
         <namedColor name="S2">
             <color red="0.99900001287460327" green="0.93999999761581421" blue="0.64099997282028198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

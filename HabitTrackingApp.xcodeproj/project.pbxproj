@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1309039A273C128C00447209 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13090399273C128C00447209 /* LocalNotification.swift */; };
 		130ABC5F272F10410075870B /* SetPlansAndGoalsSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130ABC5D272F10410075870B /* SetPlansAndGoalsSecondVC.swift */; };
 		130ABC60272F10410075870B /* SetPlansAndGoalsSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130ABC5E272F10410075870B /* SetPlansAndGoalsSecondVC.xib */; };
 		1319B8802732D1D400E4ED5B /* TrackCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319B87F2732D1D400E4ED5B /* TrackCollectionVC.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		1136FA6D41A70040BC6D3FA0 /* Pods-HabitTrackingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTrackingApp.debug.xcconfig"; path = "Target Support Files/Pods-HabitTrackingApp/Pods-HabitTrackingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		13090399273C128C00447209 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		130ABC5D272F10410075870B /* SetPlansAndGoalsSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPlansAndGoalsSecondVC.swift; sourceTree = "<group>"; };
 		130ABC5E272F10410075870B /* SetPlansAndGoalsSecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPlansAndGoalsSecondVC.xib; sourceTree = "<group>"; };
 		1319B87F2732D1D400E4ED5B /* TrackCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionVC.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13090398273C126900447209 /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				13090399273C128C00447209 /* LocalNotification.swift */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
 		1319B88D2732F9E100E4ED5B /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 		133F2B99272D6CE5002B7D5E /* HabitTrackingApp */ = {
 			isa = PBXGroup;
 			children = (
+				13090398273C126900447209 /* LocalNotification */,
 				135AA0242737F04300E049CD /* ActivityIndicatorController */,
 				1319B88D2732F9E100E4ED5B /* UserDefaults */,
 				135E167A2731B0560081491F /* Constants */,
@@ -450,6 +461,7 @@
 				1319B88B2732E49F00E4ED5B /* TrackVC.swift in Sources */,
 				135AA0302737F56400E049CD /* PerviousEnteries.swift in Sources */,
 				135E16772731875A0081491F /* StatsVC.swift in Sources */,
+				1309039A273C128C00447209 /* LocalNotification.swift in Sources */,
 				130ABC5F272F10410075870B /* SetPlansAndGoalsSecondVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        UINavigationBar.appearance().backgroundColor = UIColor.bgColor
+        UINavigationBar.appearance().barTintColor = .black
+        UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
         IQKeyboardManager.shared().isEnabled = true
+        LocalNotification.shared.sendNotifications()
         return true
     }
 

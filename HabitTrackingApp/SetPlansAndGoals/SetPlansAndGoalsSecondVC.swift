@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 import MaterialComponents.MaterialChips
-class SetPlansAndGoalsSecondVC: UIViewController {
+class SetPlansAndGoalsSecondVC: BaseController {
     private var ques3Arr = ["Bulid Awareness","Make it harder","Keeps hands busy"]
     private var eventLap = ["Morning","Afternoon","Evening","Night"]
     private var times = ["1","2","3","4","5"]
@@ -28,7 +28,7 @@ class SetPlansAndGoalsSecondVC: UIViewController {
         }
     }
     
-    @IBOutlet weak private var dropDow1:UITextField!{
+    @IBOutlet weak private var dropDow1:DesignableTextField!{
         didSet{
             let picker = UIPickerView()
             picker.tag = 1
@@ -37,7 +37,7 @@ class SetPlansAndGoalsSecondVC: UIViewController {
             dropDow1.inputView = picker
         }
     }
-    @IBOutlet weak private var dropDow2:UITextField!{
+    @IBOutlet weak private var dropDow2:DesignableTextField!{
         didSet{
             let picker = UIPickerView()
             picker.tag = 2
@@ -46,7 +46,7 @@ class SetPlansAndGoalsSecondVC: UIViewController {
             dropDow2.inputView = picker
         }
     }
-    @IBOutlet weak private var dropDow3:UITextField!
+    @IBOutlet weak private var dropDow3:DesignableTextField!
 //    {
 ////        didSet{
 ////            let picker = UIPickerView()
@@ -56,7 +56,7 @@ class SetPlansAndGoalsSecondVC: UIViewController {
 ////            dropDow1.inputView = picker
 ////        }
 //    }
-    @IBOutlet weak private var dropDow4:UITextField!{
+    @IBOutlet weak private var dropDow4:DesignableTextField!{
         didSet{
             let picker = UIPickerView()
             picker.tag = 4
@@ -66,6 +66,24 @@ class SetPlansAndGoalsSecondVC: UIViewController {
         }
     }
     
+    @IBOutlet weak private var timeRe:DesignableTextField!{
+        didSet{
+            let picker = UIDatePicker()
+            picker.datePickerMode = .time
+            picker.addTarget(self, action: #selector(setTimerReminder(date:)), for: .valueChanged)
+            timeRe.inputView = picker
+        }
+    }
+    @IBOutlet weak private var remindMeField:DesignableTextField!{
+        didSet{
+            let picker = UIDatePicker()
+            picker.datePickerMode = .dateAndTime
+            picker.addTarget(self, action: #selector(setTimerReminder(date:)), for: .valueChanged)
+            remindMeField.inputView = picker
+        }
+    }
+    private var timerDate : Date?
+    private var remindMe : Date?
     @IBOutlet weak private var submitBtn:UIButton!{
         didSet{
             submitBtn.layer.cornerRadius = submitBtn.frame.height/2
@@ -95,6 +113,24 @@ class SetPlansAndGoalsSecondVC: UIViewController {
 //            ques3View.delegate = self
 //        }
 //    }
+    
+    @objc private func setRemindeMe(date:UIDatePicker)
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        let str = dateFormatter.string(from: date.date)
+        remindMe = date.date
+        remindMeField.text = str
+    }
+    
+    @objc private func setTimerReminder(date:UIDatePicker)
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .medium
+        let str = dateFormatter.string(from: date.date)
+        timerDate = date.date
+        timeRe.text = str
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -122,17 +158,28 @@ class SetPlansAndGoalsSecondVC: UIViewController {
             return
         }
         
+        ActivityController.init().showIndicator()
+        
         Networking.shareInstance.callNetwork(uri: ApiEndPoints.addPlan, method: .post, parameters: para) { (result:Result<SuccessModel>) in
             DispatchQueue.main.async {
                 [weak self] in
+                guard let self = self else {return}
+                ActivityController.init().dismissIndicator()
                 switch result{
-                case .success(let user):
-                    print("Successlffff",user)
+                case .success:
+                    self.timerDate != nil ? self.setNotifications() : nil
+                    self.navigationController?.popViewController(animated: true)
                 case .failure(let er):
-                    print(er)
+                    self.showAlert(title: "Error", message: er.localizedDescription, action: nil)
                 }
             }
         }
+    }
+    
+    private func setNotifications(){
+        UserState.settimeReminder(date: self.timerDate!)
+        LocalNotification.shared.cancelNotifications()
+        LocalNotification.shared.sendNotifications()
     }
 
 }

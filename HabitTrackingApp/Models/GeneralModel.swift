@@ -21,7 +21,7 @@ struct HabitLogModel:Codable{
 }
 
 struct HabitLog:Codable,Hashable{
-    let user_id:Int?
+    let user_id:String?
     let tool_used:String?
     let other_things:String?
     let urge:String?

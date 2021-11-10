@@ -17,7 +17,9 @@
                 <outlet property="dropDow3" destination="6MR-um-ram" id="2Ii-hj-Q4I"/>
                 <outlet property="dropDow4" destination="VyW-b2-gN5" id="IYe-4k-wan"/>
                 <outlet property="ques3View" destination="pNd-RF-v4t" id="kES-nb-Lre"/>
+                <outlet property="remindMeField" destination="kDw-vu-BwV" id="T9R-cB-jcE"/>
                 <outlet property="submitBtn" destination="k4z-1O-maC" id="gQ9-XX-yXR"/>
+                <outlet property="timeRe" destination="6fh-vb-QqF" id="CXy-a6-F3Z"/>
                 <outlet property="view" destination="EPO-IU-k1N" id="E9x-ML-acx"/>
             </connections>
         </placeholder>
@@ -27,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-1f-3zP">
-                    <rect key="frame" x="20" y="52" width="374" height="517"/>
+                    <rect key="frame" x="20" y="52" width="374" height="532"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y5r-lv-j39">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
@@ -62,63 +64,84 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-9Y-VT8">
-                            <rect key="frame" x="0.0" y="196.5" width="374" height="34"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-9Y-VT8">
+                            <rect key="frame" x="0.0" y="196.5" width="374" height="36.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I will try " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG2-BL-MqK">
-                                    <rect key="frame" x="0.0" y="0.0" width="82" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="82" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-bj-mWd">
-                                    <rect key="frame" x="92" y="0.0" width="202.5" height="34"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-bj-mWd" customClass="DesignableTextField" customModule="HabitTrackingApp" customModuleProvider="target">
+                                    <rect key="frame" x="102" y="0.0" width="182.5" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="chevron.down" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="atleast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMo-hL-Y05">
-                                    <rect key="frame" x="304.5" y="0.0" width="69.5" height="34"/>
+                                    <rect key="frame" x="304.5" y="0.0" width="69.5" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-Hj-rlu">
-                            <rect key="frame" x="0.0" y="245.5" width="374" height="34"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-Hj-rlu">
+                            <rect key="frame" x="0.0" y="248" width="374" height="36.5"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sgl-Hq-PHG">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sgl-Hq-PHG" customClass="DesignableTextField" customModule="HabitTrackingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="36.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="aLC-MS-nnb"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="chevron.down" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times this week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgr-jn-MtY">
-                                    <rect key="frame" x="160" y="0.0" width="214" height="34"/>
+                                    <rect key="frame" x="170" y="0.0" width="204" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-CR-wVW">
-                            <rect key="frame" x="0.0" y="294.5" width="374" height="34"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-CR-wVW">
+                            <rect key="frame" x="0.0" y="299.5" width="374" height="36.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in my" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyc-Wf-mAG">
-                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6MR-um-ram">
-                                    <rect key="frame" x="65.5" y="0.0" width="193.5" height="34"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6MR-um-ram" customClass="DesignableTextField" customModule="HabitTrackingApp" customModuleProvider="target">
+                                    <rect key="frame" x="75.5" y="0.0" width="173.5" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="chevron.down" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="during the" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDw-pO-7PP">
-                                    <rect key="frame" x="269" y="0.0" width="105" height="34"/>
+                                    <rect key="frame" x="269" y="0.0" width="105" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -126,50 +149,71 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-TV-8zt">
-                            <rect key="frame" x="0.0" y="343.5" width="374" height="34"/>
+                            <rect key="frame" x="0.0" y="351" width="374" height="36.5"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-b2-gN5">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-b2-gN5" customClass="DesignableTextField" customModule="HabitTrackingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="chevron.down" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                             </subviews>
                         </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccT-AZ-mNb">
-                            <rect key="frame" x="0.0" y="392.5" width="374" height="26.5"/>
+                            <rect key="frame" x="0.0" y="402.5" width="374" height="26.5"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-Yq-EOT">
-                            <rect key="frame" x="0.0" y="434" width="374" height="34"/>
+                            <rect key="frame" x="0.0" y="444" width="374" height="36.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pYR-tb-Ct6">
-                                    <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="36.5"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-vb-QqF">
-                                    <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-vb-QqF" customClass="DesignableTextField" customModule="HabitTrackingApp" customModuleProvider="target">
+                                    <rect key="frame" x="187" y="0.0" width="187" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="chevron.down" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAr-G3-VEl">
-                            <rect key="frame" x="0.0" y="483" width="374" height="34"/>
+                            <rect key="frame" x="0.0" y="495.5" width="374" height="36.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-J4-slB">
-                                    <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="36.5"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDw-vu-BwV">
-                                    <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDw-vu-BwV" customClass="DesignableTextField" customModule="HabitTrackingApp" customModuleProvider="target">
+                                    <rect key="frame" x="187" y="0.0" width="187" height="36.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="chevron.down" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                             </subviews>
                         </stackView>
@@ -281,7 +325,28 @@
             <point key="canvasLocation" x="69.565217391304358" y="87.723214285714278"/>
         </view>
     </objects>
+    <designables>
+        <designable name="6MR-um-ram">
+            <size key="intrinsicContentSize" width="32" height="36.5"/>
+        </designable>
+        <designable name="6fh-vb-QqF">
+            <size key="intrinsicContentSize" width="32" height="36.5"/>
+        </designable>
+        <designable name="Sgl-Hq-PHG">
+            <size key="intrinsicContentSize" width="32" height="36.5"/>
+        </designable>
+        <designable name="VyW-b2-gN5">
+            <size key="intrinsicContentSize" width="32" height="36.5"/>
+        </designable>
+        <designable name="kDw-vu-BwV">
+            <size key="intrinsicContentSize" width="32" height="36.5"/>
+        </designable>
+        <designable name="lcQ-bj-mWd">
+            <size key="intrinsicContentSize" width="32" height="36.5"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <namedColor name="BtnColor">
             <color red="0.98199999332427979" green="0.5220000147819519" blue="0.39899998903274536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

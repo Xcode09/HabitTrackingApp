@@ -46,4 +46,20 @@ struct UserState {
             return false
         }
     }
+    
+    static func settimeReminder(date:Date){
+        UserDefaults.standard.removeObject(forKey: "setTimeReminder")
+        UserDefaults.standard.setValue(date, forKey: "setTimeReminder")
+        UserDefaults.standard.synchronize()
+    }
+    
+    static func gettimeReminder()->Date?{
+       
+        if let date = UserDefaults.standard.value(forKey: "setTimeReminder") as? Date{
+            return date
+        }else{
+            return nil
+        }
+     
+    }
 }

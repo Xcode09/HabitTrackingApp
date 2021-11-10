@@ -24,14 +24,36 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SKa-Kn-3jk">
                     <rect key="frame" x="20" y="197" width="374" height="502"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-7q-BdE" customClass="BarChartView" customModule="Charts">
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-mj-N17">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="246"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIG-VM-Izc" customClass="BarChartView" customModule="Charts">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nail Biting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqA-yE-gA3">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-7q-BdE" customClass="BarChartView" customModule="Charts">
+                                    <rect key="frame" x="0.0" y="36.5" width="374" height="209.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="imz-0P-Utx">
                             <rect key="frame" x="0.0" y="256" width="374" height="246"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Used Tools" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ws-7n-X0v">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIG-VM-Izc" customClass="BarChartView" customModule="Charts">
+                                    <rect key="frame" x="0.0" y="36.5" width="374" height="209.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="SKa-Kn-3jk" secondAttribute="height" multiplier="187:251" id="QNh-bD-fSo"/>

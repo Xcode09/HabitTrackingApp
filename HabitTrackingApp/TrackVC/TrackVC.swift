@@ -48,7 +48,10 @@ class TrackVC: UIViewController {
         self.navigationItem.title = "Tap & Track"
         getTracks()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Tap & Track"
+    }
 
     @IBAction private func gotStats(){
         let vc = StatsVC(nibName: "StatsVC", bundle: nil)
