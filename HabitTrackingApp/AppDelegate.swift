@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import FacebookCore
+import FBSDKCoreKit
+
 import IQKeyboardManager
 
 @main

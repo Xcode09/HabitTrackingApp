@@ -8,10 +8,10 @@
 import UIKit
 import TagListView
 import MaterialComponents.MaterialChips
-class SetPlansAndGoalsFirstVC: UIViewController {
+class SetPlansAndGoalsFirstVC: BaseController {
     private var ques1Arr = ["Awareness","Substituting","Evaluating"]
     private var ques2Arr = ["P_Ring","S_Ring","Oil","File","Sleeve"]
-    private var ques3Arr = ["Bulid Awareness","Make it harder","Keeps hands busy"]
+    private var ques3Arr = ["Build Awareness","Make it harder","Keeps hands busy"]
     private var ques1Ans = [String]()
     private var ques2Ans = [String]()
     private var ques3Ans = [String]()
@@ -61,7 +61,7 @@ class SetPlansAndGoalsFirstVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor.bgColor
         self.navigationItem.title = "Bulid your weekly plan"
         // Do any additional setup after loading the view.
 //        for i in 0..<ques1Arr.count{
@@ -91,7 +91,11 @@ class SetPlansAndGoalsFirstVC: UIViewController {
     @IBAction private func gotoNextVC(){
         let vc = SetPlansAndGoalsSecondVC(nibName: "SetPlansAndGoalsSecondVC", bundle: nil)
         
-        guard !ques1Ans.isEmpty,!ques3Ans.isEmpty,!ques2Ans.isEmpty else {return}
+        guard !ques1Ans.isEmpty,!ques3Ans.isEmpty,!ques2Ans.isEmpty else {
+            self.showAlert(title: "Error", message: "Kindly select all options", action: nil)
+            return
+            
+        }
         vc.pro = ques2Ans
         if ques2Ans.count == 2{
             vc.parameters = ["id":"\(golbalUser.id ?? 0)","focus":ques1Ans[0],"product_1":ques2Ans[0],"product_2":ques2Ans[1],"help_me":ques3Ans[0]]
@@ -152,9 +156,9 @@ extension SetPlansAndGoalsFirstVC:UICollectionViewDelegate,UICollectionViewDataS
         chipView.setBackgroundColor(UIColor.labelColor, for: .normal)
         
         //chipView.backgroundColor = UIColor.labelColor
-        chipView.titleFont = UIFont.systemFont(ofSize: 15)
-        chipView.titleLabel.numberOfLines = 1
-        chipView.titleLabel.minimumScaleFactor = 0.6
+        chipView.titleFont = UIFont.systemFont(ofSize: 13)
+        chipView.titleLabel.numberOfLines = 0
+        chipView.titleLabel.minimumScaleFactor = 0.5
         if collectionView.tag == 1{
             chipView.titleLabel.text = ques1Arr[indexPath.item]
         }else if collectionView.tag == 2

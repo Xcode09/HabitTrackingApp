@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import FacebookLogin
+import FBSDKCoreKit
+import FBSDKLoginKit
 import Alamofire
 class LoginVC: BaseController {
     @IBOutlet weak private var emailField:UITextField!{
@@ -47,9 +48,12 @@ class LoginVC: BaseController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+       
     }
     @objc private func gotoSignUp(){
         let vc = SignUpVC(nibName: "SignUpVC", bundle: nil)
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.title = ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -89,6 +93,44 @@ class LoginVC: BaseController {
                 }
             }
         }
+    }
+    
+    @IBAction private func forgotTapped(_ sender:UIButton){
+        let alertController = UIAlertController(title: "Forgot Password", message: "", preferredStyle: .alert)
+        alertController.addTextField { (textField : UITextField!) -> Void in
+                textField.placeholder = "Enter Your Email"
+            }
+        
+        alertController.addAction(UIAlertAction(title: "Send Link", style: .default, handler: { _ in
+            guard let f = alertController.textFields?[0],
+                  let text = f.text
+            else{return}
+            
+            ActivityController.init().showIndicator()
+            Networking.shareInstance.callNetwork(uri: ApiEndPoints.forgot,method: .post,parameters: ["email":text]) { (result:Result<UserModel>) in
+                DispatchQueue.main.async {
+                    [weak self] in
+                    guard let self = self else {return}
+                    ActivityController.init().dismissIndicator()
+                    switch result{
+                    case .success:
+                        self.showAlert(title: "Sent", message: "Reset link to your email address", action: nil)
+                    case .failure(let er):
+                        self.showAlert(title: "Error", message: er.localizedDescription, action: nil)
+                    }
+                }
+            }
+            
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        
+        
+        
+
     }
     
     func fetchUserProfile(token:String)

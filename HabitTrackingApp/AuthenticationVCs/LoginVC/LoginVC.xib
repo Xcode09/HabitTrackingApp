@@ -93,7 +93,7 @@
                                         <constraint firstAttribute="height" constant="66" id="LqV-kQ-pEZ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
                                             <imageReference key="value" image="lock" catalog="system" symbolScale="large" renderingMode="template"/>
@@ -113,6 +113,9 @@
                             <state key="normal" title="Forgot Password?">
                                 <color key="titleColor" name="LabelColor"/>
                             </state>
+                            <connections>
+                                <action selector="forgotTapped:" destination="-1" eventType="touchUpInside" id="oTY-pQ-tFA"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84h-pX-B3J">
                             <rect key="frame" x="0.0" y="397" width="374" height="56"/>
@@ -180,7 +183,7 @@
             <size key="intrinsicContentSize" width="4" height="18.5"/>
         </designable>
         <designable name="bwS-FQ-Wnb">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
+            <size key="intrinsicContentSize" width="4" height="17"/>
         </designable>
     </designables>
     <resources>

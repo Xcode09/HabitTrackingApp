@@ -20,6 +20,7 @@ struct ApiEndPoints{
     static let getTracks = "\(ApiEndPoints().baseURL)getTracks"
     
     static let getCounter = "\(ApiEndPoints().baseURL)getcounter"
+    static let forgot = "\(ApiEndPoints().baseURL)forgot"
     static let updateTrack = "\(ApiEndPoints().baseURL)updateTrack"
     
     static let addTrack = "\(ApiEndPoints().baseURL)addTrack"
@@ -43,6 +44,17 @@ extension String{
         if let date = dateFormatter.date(from: self){
             let secondFormatter = DateFormatter()
             secondFormatter.dateStyle = .medium
+            return secondFormatter.string(from: date)
+        }else{
+            return ""
+        }
+    }
+    func formatIntoTime()->String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        if let date = dateFormatter.date(from: self){
+            let secondFormatter = DateFormatter()
+            secondFormatter.timeStyle = .medium
             return secondFormatter.string(from: date)
         }else{
             return ""

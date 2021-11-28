@@ -33,7 +33,7 @@ class StatsVC: UIViewController {
     var todayName:String!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor.bgColor
         //setChart(dataPoints: week, values: staticSteps)
         Networking.shareInstance.callNetwork(uri: ApiEndPoints.getTracks,method: .post,parameters: ["id":"\(golbalUser.id ?? 0)"]) { (result:Result<TrackModel>) in
             DispatchQueue.main.async {
@@ -49,11 +49,16 @@ class StatsVC: UIViewController {
                         
                         return (t.day ?? "")
                     }
-                    for (index,dic) in dic.enumerated(){
+                    debugPrint(dic)
+                    for (index,track) in dic.enumerated(){
                         print("Adding values")
-                        self.week.append(dic.key)
-                        self.nailBailCounts.append(Int(dic.value[index].nailBiteCounter ?? "0") ?? 0)
-                        self.toolUsedCounts.append(Int(dic.value[index].toolUsedCounter ?? "0") ?? 0)
+                        print(track)
+                        self.week.append(track.key)
+                        for i in 0..<track.value.count{
+                            self.nailBailCounts.append(Int(track.value[i].nailBiteCounter ?? "0") ?? 0)
+                            self.toolUsedCounts.append(Int(track.value[i].toolUsedCounter ?? "0") ?? 0)
+                        }
+                        
                     }
                     print(self.week)
                     print(self.nailBailCounts)
@@ -94,11 +99,12 @@ class StatsVC: UIViewController {
         chartView.rightAxis.enabled = false
         
         let leftAxisFormatter = NumberFormatter()
-        //            leftAxisFormatter.minimumFractionDigits = 0
-        //            leftAxisFormatter.maximumFractionDigits = 1
+        leftAxisFormatter.minimumFractionDigits = 0
+        leftAxisFormatter.maximumFractionDigits = 1
         
         let leftAxis = chartView.leftAxis
         leftAxis.labelFont = .systemFont(ofSize: 10)
+        
         //leftAxis.granularity = 1
         //leftAxis.labelCount =
         leftAxis.valueFormatter = DefaultAxisValueFormatter(formatter: leftAxisFormatter)

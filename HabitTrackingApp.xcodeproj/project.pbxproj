@@ -24,6 +24,8 @@
 		133F2BA7272D6CE7002B7D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133F2BA5272D6CE7002B7D5E /* LaunchScreen.storyboard */; };
 		133F2BB4272D6DE9002B7D5E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F2BB2272D6DE9002B7D5E /* LoginVC.swift */; };
 		133F2BB5272D6DE9002B7D5E /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133F2BB3272D6DE9002B7D5E /* LoginVC.xib */; };
+		135032AA274E92E800F57F17 /* MaterialComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135032A9274E92E800F57F17 /* MaterialComponents.framework */; };
+		135032AD274E957400F57F17 /* MDFInternationalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135032AC274E957400F57F17 /* MDFInternationalization.framework */; };
 		135AA0262737F04300E049CD /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135AA0252737F04300E049CD /* ActivityIndicatorView.swift */; };
 		135AA0302737F56400E049CD /* PerviousEnteries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135AA02F2737F56400E049CD /* PerviousEnteries.swift */; };
 		135AA03E273821D600E049CD /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135AA03C273821D600E049CD /* LogCell.swift */; };
@@ -35,8 +37,7 @@
 		135E24FF273145DF0082456F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 135E24FE273145DF0082456F /* Alamofire */; };
 		135E25092731474A0082456F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E25062731474A0082456F /* Networking.swift */; };
 		135E250E273149370082456F /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E250D273149370082456F /* GeneralModel.swift */; };
-		135E251527314ECA0082456F /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 135E251427314ECA0082456F /* FacebookCore */; };
-		135E251727314ECA0082456F /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 135E251627314ECA0082456F /* FacebookLogin */; };
+		13806065274E53B700BEDAC0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13806064274E53B700BEDAC0 /* CoreServices.framework */; };
 		13A4C725272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C723272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift */; };
 		13A4C726272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C724272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib */; };
 		13A4C72A272F052300FAF953 /* TagListView in Frameworks */ = {isa = PBXBuildFile; productRef = 13A4C729272F052300FAF953 /* TagListView */; };
@@ -62,6 +63,7 @@
 		1319B8882732E49E00E4ED5B /* TrackVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackVC.xib; sourceTree = "<group>"; };
 		1319B8892732E49F00E4ED5B /* TrackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
 		1319B88E2732F9E100E4ED5B /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
+		133129DE274E7B1200AC8FBD /* BrindingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrindingHeader.h; sourceTree = "<group>"; };
 		133F2B97272D6CE5002B7D5E /* HabitTrackingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTrackingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133F2B9A272D6CE5002B7D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		133F2B9C272D6CE5002B7D5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		133F2BA8272D6CE7002B7D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133F2BB2272D6DE9002B7D5E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		133F2BB3272D6DE9002B7D5E /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		135032A9274E92E800F57F17 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		135032AC274E957400F57F17 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		135AA0252737F04300E049CD /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		135AA02F2737F56400E049CD /* PerviousEnteries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerviousEnteries.swift; sourceTree = "<group>"; };
 		135AA03C273821D600E049CD /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		135E167B2731B0560081491F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		135E25062731474A0082456F /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		135E250D273149370082456F /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		13806064274E53B700BEDAC0 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		13A4C723272F047200FAF953 /* SetPlansAndGoalsFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPlansAndGoalsFirstVC.swift; sourceTree = "<group>"; };
 		13A4C724272F047200FAF953 /* SetPlansAndGoalsFirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPlansAndGoalsFirstVC.xib; sourceTree = "<group>"; };
 		13DD55A3273053F60081286F /* ChipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCell.swift; sourceTree = "<group>"; };
@@ -100,11 +105,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135E251727314ECA0082456F /* FacebookLogin in Frameworks */,
+				135032AD274E957400F57F17 /* MDFInternationalization.framework in Frameworks */,
+				135032AA274E92E800F57F17 /* MaterialComponents.framework in Frameworks */,
+				13806065274E53B700BEDAC0 /* CoreServices.framework in Frameworks */,
 				135E1672273186CE0081491F /* Charts in Frameworks */,
 				13A4C72A272F052300FAF953 /* TagListView in Frameworks */,
 				135E24FF273145DF0082456F /* Alamofire in Frameworks */,
-				135E251527314ECA0082456F /* FacebookCore in Frameworks */,
 				C12603C36086979FC3045193 /* Pods_HabitTrackingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +176,7 @@
 				133F2BA8272D6CE7002B7D5E /* Info.plist */,
 				13DD55A3273053F60081286F /* ChipCell.swift */,
 				13DD55A4273053F60081286F /* ChipCell.xib */,
+				133129DE274E7B1200AC8FBD /* BrindingHeader.h */,
 			);
 			path = HabitTrackingApp;
 			sourceTree = "<group>";
@@ -289,6 +296,9 @@
 		A17AD2935153BF31F48E2BD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				135032AC274E957400F57F17 /* MDFInternationalization.framework */,
+				135032A9274E92E800F57F17 /* MaterialComponents.framework */,
+				13806064274E53B700BEDAC0 /* CoreServices.framework */,
 				254AE7AD196FE2C98F812F37 /* Pods_HabitTrackingApp.framework */,
 			);
 			name = Frameworks;
@@ -324,8 +334,6 @@
 			packageProductDependencies = (
 				13A4C729272F052300FAF953 /* TagListView */,
 				135E24FE273145DF0082456F /* Alamofire */,
-				135E251427314ECA0082456F /* FacebookCore */,
-				135E251627314ECA0082456F /* FacebookLogin */,
 				135E1671273186CE0081491F /* Charts */,
 			);
 			productName = HabitTrackingApp;
@@ -358,7 +366,6 @@
 			packageReferences = (
 				13A4C728272F052300FAF953 /* XCRemoteSwiftPackageReference "TagListView" */,
 				135E24FD273145DF0082456F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				135E1670273186CE0081491F /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 133F2B98272D6CE5002B7D5E /* Products */;
@@ -610,16 +617,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H874Q37WU8;
+				DEVELOPMENT_TEAM = 4ZRN849XTC;
 				INFOPLIST_FILE = HabitTrackingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.habitios;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitbitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -631,16 +641,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H874Q37WU8;
+				DEVELOPMENT_TEAM = 4ZRN849XTC;
 				INFOPLIST_FILE = HabitTrackingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.habitios;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitbitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -686,14 +699,6 @@
 				minimumVersion = 4.8.0;
 			};
 		};
-		135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.1.0;
-			};
-		};
 		13A4C728272F052300FAF953 /* XCRemoteSwiftPackageReference "TagListView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ElaWorkshop/TagListView.git";
@@ -714,16 +719,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 135E24FD273145DF0082456F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		135E251427314ECA0082456F /* FacebookCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookCore;
-		};
-		135E251627314ECA0082456F /* FacebookLogin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 135E251327314ECA0082456F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookLogin;
 		};
 		13A4C729272F052300FAF953 /* TagListView */ = {
 			isa = XCSwiftPackageProductDependency;

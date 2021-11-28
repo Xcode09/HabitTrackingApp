@@ -15,6 +15,7 @@
                 <outlet property="emailField" destination="k1g-b4-qQT" id="uxG-mI-YZ2"/>
                 <outlet property="nameField" destination="9Eg-wI-f8m" id="BXG-3f-2z3"/>
                 <outlet property="passField" destination="i6g-Wa-qPC" id="3pX-We-pka"/>
+                <outlet property="signInBtn" destination="Hji-Lr-PUW" id="6aJ-oc-K8s"/>
                 <outlet property="view" destination="7sR-U8-YAd" id="bJN-Q3-1WG"/>
             </connections>
         </placeholder>
@@ -69,7 +70,7 @@
                                             <color key="value" name="BtnColor"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                            <real key="value" value="5"/>
+                                            <real key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
@@ -100,7 +101,7 @@
                                             <color key="value" name="BtnColor"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                            <real key="value" value="5"/>
+                                            <real key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
@@ -131,7 +132,7 @@
                                             <color key="value" name="BtnColor"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                            <real key="value" value="5"/>
+                                            <real key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>

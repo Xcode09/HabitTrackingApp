@@ -12,10 +12,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HabitLogVC" customModule="HabitTrackingApp" customModuleProvider="target">
             <connections>
+                <outlet property="activityField" destination="OjD-PJ-acK" id="Ak4-V0-iTq"/>
                 <outlet property="chipCV1" destination="meE-Eo-XkL" id="4a0-qs-doJ"/>
                 <outlet property="otherThingsView" destination="zCI-X1-oxx" id="cHT-Lj-KhG"/>
                 <outlet property="ques2View" destination="ovo-6h-blJ" id="oQ1-s9-frD"/>
                 <outlet property="ques3View" destination="cUK-UB-maK" id="Pd1-MV-AXQ"/>
+                <outlet property="submitBtn" destination="m82-jz-WCI" id="Eat-zj-lEt"/>
                 <outlet property="urge" destination="c6o-RR-3mh" id="upY-i0-MCm"/>
                 <outlet property="view" destination="xU3-50-bgK" id="cEP-LR-JYZ"/>
             </connections>
@@ -172,14 +174,9 @@
                         <constraint firstAttribute="height" constant="46" id="wCu-ex-nUQ"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <state key="normal" title="Countine">
+                    <state key="normal" title="Submit">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="35"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="submitBtn:" destination="-1" eventType="touchUpInside" id="4gx-fi-Tay"/>
                     </connections>

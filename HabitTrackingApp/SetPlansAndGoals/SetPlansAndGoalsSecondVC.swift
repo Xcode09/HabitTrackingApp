@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 import MaterialComponents.MaterialChips
 class SetPlansAndGoalsSecondVC: BaseController {
-    private var ques3Arr = ["Bulid Awareness","Make it harder","Keeps hands busy"]
+    private var ques3Arr = ["Car","Office","Room","Tv Room"]
     private var eventLap = ["Morning","Afternoon","Evening","Night"]
     private var times = ["1","2","3","4","5"]
     var pro : [String] = [String]()
@@ -133,7 +133,7 @@ class SetPlansAndGoalsSecondVC: BaseController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.bgColor
         // Do any additional setup after loading the view.
         ques3View.register(
             MDCChipCollectionViewCell.self,
@@ -155,6 +155,7 @@ class SetPlansAndGoalsSecondVC: BaseController {
         parameters?.updateValue("", forKey:"reminder_detail")
         
         guard let para = parameters else {
+            self.showAlert(title: "Error", message: "Kindly select all options", action: nil)
             return
         }
         
@@ -168,7 +169,6 @@ class SetPlansAndGoalsSecondVC: BaseController {
                 switch result{
                 case .success:
                     self.timerDate != nil ? self.setNotifications() : nil
-                    self.navigationController?.popViewController(animated: true)
                 case .failure(let er):
                     self.showAlert(title: "Error", message: er.localizedDescription, action: nil)
                 }
@@ -180,6 +180,9 @@ class SetPlansAndGoalsSecondVC: BaseController {
         UserState.settimeReminder(date: self.timerDate!)
         LocalNotification.shared.cancelNotifications()
         LocalNotification.shared.sendNotifications()
+        self.showAlert(title: "Success", message: "Successfully add plan") { (_) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
 
 }
@@ -250,10 +253,11 @@ extension SetPlansAndGoalsSecondVC:UICollectionViewDelegate,UICollectionViewData
         chipView.setBackgroundColor(UIColor.labelColor, for: .normal)
         
         //chipView.backgroundColor = UIColor.labelColor
-        chipView.titleFont = UIFont.systemFont(ofSize: 15)
-        chipView.titleLabel.numberOfLines = 1
-        chipView.titleLabel.minimumScaleFactor = 0.6
+        chipView.titleFont = UIFont.systemFont(ofSize: 14)
+        chipView.titleLabel.numberOfLines = 0
+        chipView.titleLabel.minimumScaleFactor = 0.5
         chipView.titleLabel.text = ques3Arr[indexPath.item]
+        chipView.invalidateIntrinsicContentSize()
         return cell
     }
     
@@ -267,6 +271,6 @@ extension SetPlansAndGoalsSecondVC:UICollectionViewDelegate,UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: 100, height: 36)
+        return .init(width:100, height: 36)
     }
 }

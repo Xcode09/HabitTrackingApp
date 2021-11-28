@@ -17,6 +17,7 @@ class PerviousEnteries: UIViewController,UITableViewDelegate,UITableViewDataSour
     
     private var tableView:UITableView={
         let view = UITableView()
+        view.backgroundColor = UIColor.bgColor
         view.register(UINib(nibName: "LogCell", bundle: nil), forCellReuseIdentifier: "LogCell")
         view.tableFooterView = UIView()
         return view
@@ -31,11 +32,11 @@ class PerviousEnteries: UIViewController,UITableViewDelegate,UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         tableView.sectionFooterHeight = 1
-        self.navigationItem.title = "Pervious Enteries"
+        self.navigationItem.title = "Previous Enteries"
         
         
         
-        Networking.shareInstance.callNetwork(uri: ApiEndPoints.habitLog,method: .post,parameters: ["id":"1"]){ (result:Result<HabitLogModel>) in
+        Networking.shareInstance.callNetwork(uri: ApiEndPoints.habitLog,method: .post,parameters: ["id":"\(golbalUser.id ?? 0)"]){ (result:Result<HabitLogModel>) in
             DispatchQueue.main.async {
                 [weak self] in
                 
@@ -93,10 +94,10 @@ class PerviousEnteries: UIViewController,UITableViewDelegate,UITableViewDataSour
         
         let label = UILabel()
         label.numberOfLines = 0
-        label.text = "\(enteries[section].date.formatIntoDate())\nHello"
+        label.text = "Date:\(enteries[section].date.formatIntoDate())\nTime:\(enteries[section].date.formatIntoTime())"
         let button = UIButton()
         button.setImage(UIImage.init(systemName: "chevron.down"), for: .normal)
-        button.tintColor = .white
+        button.tintColor = .black
         button.tag = section
         button.addTarget(self, action: #selector(expandCells), for: .touchUpInside)
         let stack = UIStackView(frame: CGRect(x: 10, y: 0, width: tableView.frame.width - 20, height: 80))
@@ -104,7 +105,7 @@ class PerviousEnteries: UIViewController,UITableViewDelegate,UITableViewDataSour
         stack.addArrangedSubview(button)
         stack.distribution = .equalSpacing
         stack.axis = .horizontal
-        view.backgroundColor = UIColor.labelColor
+        view.backgroundColor = UIColor.white.withAlphaComponent(0.7)
         //stack.frame = view.bounds
         view.addSubview(stack)
         

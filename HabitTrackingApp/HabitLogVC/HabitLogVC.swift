@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 import MaterialComponents.MaterialChips
-class HabitLogVC: UIViewController {
+class HabitLogVC: BaseController {
     private var ques1Arr = ["Anxious","Stressed","Bored"]
     private var ques2Arr = ["Yes","No"]
     private var ques3Arr = ["Yes","No"]
@@ -18,6 +18,8 @@ class HabitLogVC: UIViewController {
     private var biteOr = "UnKnown"
     private var usedTool = "UnKnown"
     @IBOutlet weak private var otherThingsView:UITextField!
+    
+    @IBOutlet weak private var activityField:UITextField!
     @IBOutlet weak private var chipCV1:UICollectionView!
     @IBOutlet weak private var urge:UISlider!
     @IBOutlet weak private var ques2View:UICollectionView!{
@@ -37,9 +39,15 @@ class HabitLogVC: UIViewController {
             ques3View.delegate = self
         }
     }
+    
+    @IBOutlet weak private var submitBtn:UIButton!{
+        didSet{
+            submitBtn.layer.cornerRadius = submitBtn.frame.height/2
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.bgColor
         let layout = MDCChipCollectionViewFlowLayout()
         
         chipCV1.collectionViewLayout = layout
@@ -84,13 +92,23 @@ class HabitLogVC: UIViewController {
     }
     @IBAction private func submitBtn(_ sender:UIButton)
     {
+        guard activityField.text != "",
+              feeling != "",
+              biteOr != "",
+              urgeValues != 0.0
+        else{
+            self.showAlert(title: "Error", message: "Kindly select all fields", action: nil)
+            return
+        }
+              
+        
         let para : [String:Any] = ["id":"\(golbalUser.id ?? 0)",
         "tool_used":usedTool,
         "other_things":otherThingsView.hasText == true ? otherThingsView.text ?? "" : "",
-        "urge":"\(urgeValues)",
+        "urge":urgeSize(value: urge.value),
         "bite":biteOr,
         "feeling":feeling,
-        "activity":activity
+        "activity":activityField.text ?? ""
         ]
         
         ActivityController.init().showIndicator()
@@ -108,6 +126,17 @@ class HabitLogVC: UIViewController {
             }
         }
         
+    }
+    
+    private func urgeSize(value:Float)->String{
+        switch value {
+        case 1.0..<4.9:
+            return "Small"
+        case 4.9..<5.9:
+            return "Medium"
+        default:
+            return "Large"
+        }
     }
 }
 

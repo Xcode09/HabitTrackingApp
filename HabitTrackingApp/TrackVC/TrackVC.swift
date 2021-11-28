@@ -58,6 +58,12 @@ class TrackVC: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction private func gotLogs(){
+        let vc = HabitLogVC(nibName: "HabitLogVC", bundle:nil)
+        self.navigationItem.title = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction private func trackNailBitting(_ sender:UIButton){
         
         guard var counter = tracks?.nail_bite_counter, let r = tracks else {
