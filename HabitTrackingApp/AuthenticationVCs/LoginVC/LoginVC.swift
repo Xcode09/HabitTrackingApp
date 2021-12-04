@@ -136,7 +136,7 @@ class LoginVC: BaseController {
     func fetchUserProfile(token:String)
     {
         
-        let graphRequest : GraphRequest = GraphRequest(graphPath: "me", parameters: ["fields":"id, email, name, picture.width(480).height(480)"])
+        let graphRequest : GraphRequest = GraphRequest(graphPath: "me", parameters: ["fields":"id, email, name, picture.width(480).height(480)"],httpMethod: .post)
         
         graphRequest.start { (connection, result, error) in
             

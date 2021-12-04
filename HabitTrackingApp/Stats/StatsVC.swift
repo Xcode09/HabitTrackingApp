@@ -55,8 +55,8 @@ class StatsVC: UIViewController {
                         print(track)
                         self.week.append(track.key)
                         for i in 0..<track.value.count{
-                            self.nailBailCounts.append(Int(track.value[i].nailBiteCounter ?? "0") ?? 0)
-                            self.toolUsedCounts.append(Int(track.value[i].toolUsedCounter ?? "0") ?? 0)
+                            self.nailBailCounts.append(Int(track.value[i].nailBiteCounter ?? 0))
+                            self.toolUsedCounts.append(Int(track.value[i].toolUsedCounter ?? 0))
                         }
                         
                     }

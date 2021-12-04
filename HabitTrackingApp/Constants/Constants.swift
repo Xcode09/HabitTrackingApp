@@ -10,7 +10,7 @@ import UIKit
 var golbalUser : User!
 var currentPlan:Plan?
 struct ApiEndPoints{
-    private let baseURL = "http://codexit.xyz/api/" //"http://api.bilkoll.com/api/"
+    private let baseURL = "http://api.kitbitapp.com/api/" //"http://api.bilkoll.com/api/"
     static let signup = "\(ApiEndPoints().baseURL)signup"
     static let login = "\(ApiEndPoints().baseURL)login"
     static let habitLog = "\(ApiEndPoints().baseURL)habit_log"

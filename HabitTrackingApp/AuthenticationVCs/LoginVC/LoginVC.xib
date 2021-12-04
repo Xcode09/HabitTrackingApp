@@ -25,8 +25,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-15-UxT">
-                    <rect key="frame" x="20" y="60" width="374" height="559.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-15-UxT">
+                    <rect key="frame" x="20" y="60" width="374" height="474.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xf9-cZ-Zcm">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
@@ -38,7 +38,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8V-6Y-8mB">
-                            <rect key="frame" x="0.0" y="56" width="374" height="36"/>
+                            <rect key="frame" x="0.0" y="51" width="374" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="eAD-Ix-KNY"/>
                             </constraints>
@@ -47,7 +47,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Trc-hz-jFU">
-                            <rect key="frame" x="0.0" y="112" width="374" height="97.5"/>
+                            <rect key="frame" x="0.0" y="102" width="374" height="77.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-vS-EIV">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
@@ -56,10 +56,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYE-PR-7nq" customClass="DesignableUITextField" customModule="HabitTrackingApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="31.5" width="374" height="66"/>
+                                    <rect key="frame" x="0.0" y="31.5" width="374" height="46"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="66" id="CAq-AI-gSm"/>
+                                        <constraint firstAttribute="height" constant="46" id="CAq-AI-gSm"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -78,7 +78,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ulh-4O-Muu">
-                            <rect key="frame" x="0.0" y="229.5" width="374" height="97.5"/>
+                            <rect key="frame" x="0.0" y="194.5" width="374" height="77.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyB-Yd-9Eo">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
@@ -87,10 +87,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwS-FQ-Wnb" customClass="DesignableUITextField" customModule="HabitTrackingApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="31.5" width="374" height="66"/>
+                                    <rect key="frame" x="0.0" y="31.5" width="374" height="46"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="66" id="LqV-kQ-pEZ"/>
+                                        <constraint firstAttribute="height" constant="46" id="LqV-kQ-pEZ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -109,7 +109,7 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-wf-L83">
-                            <rect key="frame" x="0.0" y="347" width="374" height="30"/>
+                            <rect key="frame" x="0.0" y="287" width="374" height="30"/>
                             <state key="normal" title="Forgot Password?">
                                 <color key="titleColor" name="LabelColor"/>
                             </state>
@@ -118,10 +118,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84h-pX-B3J">
-                            <rect key="frame" x="0.0" y="397" width="374" height="56"/>
+                            <rect key="frame" x="0.0" y="332" width="374" height="46"/>
                             <color key="backgroundColor" name="BtnColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="56" id="xMi-gY-fOJ"/>
+                                <constraint firstAttribute="height" constant="46" id="xMi-gY-fOJ"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                             <state key="normal" title="Sign in">
@@ -132,7 +132,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-Pt-5NH">
-                            <rect key="frame" x="0.0" y="473" width="374" height="20.5"/>
+                            <rect key="frame" x="0.0" y="393" width="374" height="20.5"/>
                             <attributedString key="attributedText">
                                 <fragment content="Don't have an account? ">
                                     <attributes>
@@ -151,7 +151,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nic-FK-8P9">
-                            <rect key="frame" x="0.0" y="513.5" width="374" height="46"/>
+                            <rect key="frame" x="0.0" y="428.5" width="374" height="46"/>
                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="46" id="DSq-tc-PtN"/>
@@ -180,10 +180,10 @@
     </objects>
     <designables>
         <designable name="TYE-PR-7nq">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
+            <size key="intrinsicContentSize" width="34" height="18.5"/>
         </designable>
         <designable name="bwS-FQ-Wnb">
-            <size key="intrinsicContentSize" width="4" height="17"/>
+            <size key="intrinsicContentSize" width="31" height="17"/>
         </designable>
     </designables>
     <resources>

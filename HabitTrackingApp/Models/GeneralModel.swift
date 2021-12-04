@@ -21,7 +21,7 @@ struct HabitLogModel:Codable{
 }
 
 struct HabitLog:Codable,Hashable{
-    let user_id:String?
+    let user_id:Int?
     let tool_used:String?
     let other_things:String?
     let urge:String?
@@ -57,8 +57,13 @@ struct TrackCounter:Codable{
 
 
 struct Track:Codable,Hashable{
-    let id, nailBiteCounter, toolUsedCounter, day: String?
-        let userID, planID, recordDate, createdAt: String?
+    let id:Int?
+    let nailBiteCounter:Int?
+    let toolUsedCounter:Int?
+    let day: String?
+    let userID:Int?
+    let planID:Int?
+    let recordDate, createdAt: String?
         let updatedAt: String?
 
         enum CodingKeys: String, CodingKey {
@@ -83,8 +88,10 @@ struct PlanModel: Codable {
 
 // MARK: - Result
 struct Plan: Codable {
-    let id, focus, product1, product2: String?
-    let helpMe, userID: String?
+    let id:Int?
+    let focus, product1, product2: String?
+    let helpMe:String?
+    let userID: Int?
     let resultWhere: String?
     let startDate, endDate, eventTime, tryProduct: String?
     let pTotalTimes, pLocation: String?

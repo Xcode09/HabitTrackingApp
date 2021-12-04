@@ -118,10 +118,11 @@ class HabitLogVC: BaseController {
                 [weak self] in
                 ActivityController.init().dismissIndicator()
                 switch result{
-                case .success(let user):
+                case .success:
+                    self?.showAlert(title: "Success", message: "Successfully Added", action: nil)
                     break
                 case .failure(let er):
-                    print(er)
+                    self?.showAlert(title: "Error", message: er.localizedDescription, action: nil)
                 }
             }
         }
